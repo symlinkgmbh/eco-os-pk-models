@@ -23,4 +23,6 @@ export interface IContent {
   key: string;
   domain?: string;
   liveTime?: Date;
+  maxOpen?: number;
+  openings?: number;
 }

@@ -18,9 +18,16 @@
 
 
 import { AxiosResponse } from "axios";
+import { MsContent } from "../../services";
 
 export interface IEcoFederationClient {
   validateIncomingFederationRequest(checksum: string, body: object): Promise<AxiosResponse>;
   loadRemoteUserPublicKeys(email: string): Promise<AxiosResponse>;
   getUserKeys(email: string, domain: string): Promise<AxiosResponse>;
+  initFederation(domain: string): Promise<AxiosResponse>;
+  postRemoteContent(content: MsContent.IContent): Promise<AxiosResponse>;
+  postRemoteContentAsCommunity(content: MsContent.IContent): Promise<AxiosResponse>;
+  receiveRemoteContent(content: MsContent.IContent): Promise<AxiosResponse>;
+  getRemoteContent(checksum: string, domain: string): Promise<AxiosResponse>;
+  deliverRemoteContent(checksum: string, domain: string): Promise<AxiosResponse>;
 }

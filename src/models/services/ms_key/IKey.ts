@@ -22,4 +22,6 @@ export interface IKey {
   pubKey: string;
   email: string;
   deviceId: string;
+  createdAt?: Date;
+  deviceType?: string;
 }

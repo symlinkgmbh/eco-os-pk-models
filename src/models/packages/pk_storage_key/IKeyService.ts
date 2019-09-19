@@ -26,4 +26,5 @@ export interface IKeyService {
   revokeAllPubKeys(): Promise<boolean>;
   addPubKey(email: string, pubKey: string, deviceId: string): Promise<MsKey.IKey | null>;
   checkForKeyAndDeviceId(key: string, deviceId: string): Promise<boolean>;
+  revokeDevice(deviceId: string): Promise<boolean>;
 }

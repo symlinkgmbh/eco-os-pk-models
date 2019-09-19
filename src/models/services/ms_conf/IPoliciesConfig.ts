@@ -24,6 +24,7 @@ export interface IPoliciesConfig {
   passwordDescritpion?: string;
   passwordDescriptionLocalized?: string;
   allowOldPasswordAsNewPassword: boolean;
+  enableApiEncryption: boolean;
   allowAccessByApiKeys: boolean;
   shouldAcceptEula: boolean;
   eulaURL: string;

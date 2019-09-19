@@ -22,6 +22,8 @@ import { AxiosResponse } from "axios";
 
 export interface IEcoContentClient {
   loadContent(checksum: string): Promise<AxiosResponse>;
-  createContent(req: MsContent.IContent): Promise<AxiosResponse>;
+  loadContentFromFederation(checksum: string): Promise<AxiosResponse>;
+  createContent(req: MsContent.IContent | Array<MsContent.IContent>): Promise<AxiosResponse>;
+  createContentFromFederation(req: MsContent.IContent | Array<MsContent.IContent>): Promise<AxiosResponse>;
   revokeOutdatedContent(): Promise<AxiosResponse>;
 }
