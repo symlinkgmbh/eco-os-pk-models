@@ -17,6 +17,8 @@
 
 
 
+import { IFeatureObject } from "./IFeatureObject";
+
 export interface ILicenseBeat {
   name: string;
   id: string;

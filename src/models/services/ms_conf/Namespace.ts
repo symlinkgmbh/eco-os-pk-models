@@ -27,3 +27,4 @@ export { ICaptchaConfig } from "./ICaptchaConfig";
 export { IDosConfig } from "./IDosConfig";
 export { IPublicApiEndpoints } from "./IPublicApiEndpoints";
 export { IFederationConfig } from "./IFederationConfig";
+export { IFeatureObject } from "./IFeatureObject";

@@ -34,3 +34,4 @@ export { IEcoRegistryClient } from "./IEcoRegistryClient";
 export { IEcoUserClient } from "./IEcoUserClient";
 export { IEcoLicenseClient } from "./IEcoLicenseClient";
 export { IEcoFederationClient } from "./IEcoFederationClient";
+export { IEcoFederationKeyClient } from "./IEcoFederationKeyClient";

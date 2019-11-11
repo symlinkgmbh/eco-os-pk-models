@@ -25,3 +25,4 @@ export { IMailActivateAccount } from "./IMailActivateAccount";
 export { IMailDeleteAccount } from "./IMailDeleteAccount";
 export { IMailResetPassword } from "./IMailResetPassword";
 export { IMailAccountLocked } from "./IMailLockedAccount";
+export { IMailFederationFailed } from "./IMailFederationFailed";

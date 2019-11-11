@@ -17,16 +17,11 @@
 
 
 
-import { MsConf } from "../../services";
 import { AxiosResponse } from "axios";
 
-export interface IEcoConfigClient {
-  set(object: MsConf.IConfigEntry): Promise<AxiosResponse>;
-  get(id: string): Promise<AxiosResponse>;
-  delete(id: string): Promise<AxiosResponse>;
-  update(object: MsConf.IConfigEntry): Promise<AxiosResponse>;
-  getAll(): Promise<AxiosResponse>;
-  deleteAll(): Promise<AxiosResponse>;
-  getRunningConfig(): Promise<AxiosResponse>;
-  getRunningConfigFromSingleService(name: string): Promise<AxiosResponse>;
+export interface IEcoFederationKeyClient {
+  validateIncomingFederationRequest(checksum: string, body: object): Promise<AxiosResponse>;
+  loadRemoteUserPublicKeys(email: string): Promise<AxiosResponse>;
+  getUserKeys(email: string, domain: string): Promise<AxiosResponse>;
+  initFederation(domain: string): Promise<AxiosResponse>;
 }

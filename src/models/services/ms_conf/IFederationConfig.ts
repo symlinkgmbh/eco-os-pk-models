@@ -19,4 +19,5 @@
 
 export interface IFederationConfig {
   publicFederationSerivce: string;
+  federationBlackList: Array<string>;
 }

@@ -26,3 +26,4 @@ export { IValidatorPattern } from "./IValidationPattern";
 export { IValidator } from "./IValidator";
 export { IHeartbeat } from "./IHeartbeat";
 export { ILicenseBeat } from "./ILicenseBeat";
+export { IConfigBeat } from "./IConfigBeat";

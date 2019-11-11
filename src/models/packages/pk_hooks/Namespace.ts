@@ -18,3 +18,4 @@
 
 
 export { IUserHooks } from "./IUserHooks";
+export { IFederationHooks } from "./IFederationHooks";

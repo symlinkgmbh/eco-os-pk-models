@@ -18,3 +18,6 @@
 
 
 export { IFederationStorageObject } from "./IFederationStorageObject";
+export { IFederationPostObject } from "./IFederationPostObject";
+export { IFederationConfig } from "./IFederationPostConfig";
+export { IFederationHeaders } from "./IFederationHeaders";
