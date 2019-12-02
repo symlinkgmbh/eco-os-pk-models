@@ -17,5 +17,9 @@
 
 
 
-export { ISignToken } from "./ISignToken";
-export { ICryptoWorker } from "./ICryptoWorker";
+export interface IApikeyGroup {
+  key: string;
+  members: Array<string>;
+  domains: Array<string>;
+  expireDate?: Date;
+}

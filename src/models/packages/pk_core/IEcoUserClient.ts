@@ -40,8 +40,12 @@ export interface IEcoUserClient {
   verifyForgotPasswordId(id: string): Promise<AxiosResponse>;
   verifyActivationId(id: string): Promise<AxiosResponse>;
   verifyDeleteId(id: string): Promise<AxiosResponse>;
-  addKeyToUser(id: string, apiKey: string): Promise<AxiosResponse>;
+  addKeyToUser(id: string, apiKey: MsUser.IApiKey): Promise<AxiosResponse>;
   loadUserByApiKey(key: string): Promise<AxiosResponse>;
   removeKeyFromUser(id: string, apiKey: string): Promise<AxiosResponse>;
   removeAllKeysFromUser(id: string): Promise<AxiosResponse>;
+  // JSC: COMES WITH A LATER UPDATE
+  // addAliasToUser(id: string, alias: string): Promise<AxiosResponse>;
+  // removeAliasFromUser(id: string, alias: string): Promise<AxiosResponse>;
+  // loadUserByAlias(alias: string): Promise<AxiosResponse>;
 }

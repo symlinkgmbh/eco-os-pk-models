@@ -17,5 +17,5 @@
 
 
 
-export { ISignToken } from "./ISignToken";
-export { ICryptoWorker } from "./ICryptoWorker";
+import * as PkStorageApikeyGroup from "./Namespace";
+export { PkStorageApikeyGroup };

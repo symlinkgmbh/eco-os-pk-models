@@ -17,5 +17,7 @@
 
 
 
-export { ISignToken } from "./ISignToken";
-export { ICryptoWorker } from "./ICryptoWorker";
+export interface ICryptoWorker {
+  encryptBody<T>(obj: T, publickey: any): Promise<T>;
+  decryptBody<T>(obj: T, privatekey: any): Promise<T>;
+}

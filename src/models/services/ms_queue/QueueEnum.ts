@@ -17,5 +17,12 @@
 
 
 
-export { ISignToken } from "./ISignToken";
-export { ICryptoWorker } from "./ICryptoWorker";
+export enum QueueStates {
+  scheduled = "scheduled",
+  processing = "processing",
+  crashed = "crashed",
+  finished = "finished",
+  failover = "failover",
+  error = "error",
+  remoteProcessing = "remote_processing",
+}

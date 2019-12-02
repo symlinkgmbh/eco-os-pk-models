@@ -22,3 +22,4 @@ export { IUpdateJob } from "./IUpdateJob";
 export { IJobPayload } from "./IJobPayload";
 export { IJobFailover } from "./IJobFailover";
 export { ICreateJob } from "./ICreateJob";
+export { QueueStates } from "./QueueEnum";

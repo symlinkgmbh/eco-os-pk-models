@@ -18,6 +18,7 @@
 
 
 import { IUserRole } from "./IUserRole";
+import { IApiKey } from "./IApiKey";
 
 export interface IUser {
   _id?: string;
@@ -33,5 +34,6 @@ export interface IUser {
   otp?: string | null;
   lastPasswordHash?: string | null;
   hasEulaAccepted?: boolean;
-  apiKeys?: Array<string>;
+  apiKeys?: Array<IApiKey>;
+  alias?: Array<string>;
 }

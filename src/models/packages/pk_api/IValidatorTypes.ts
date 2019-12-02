@@ -17,5 +17,9 @@
 
 
 
-export { ISignToken } from "./ISignToken";
-export { ICryptoWorker } from "./ICryptoWorker";
+export enum IValidatorTypes {
+  string = "string",
+  number = "number",
+  boolean = "boolean",
+  object = "object",
+}

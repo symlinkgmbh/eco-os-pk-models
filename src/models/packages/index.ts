@@ -35,3 +35,4 @@ export * from "./pk_storage_key";
 export * from "./pk_storage_user";
 export * from "./pk_storage_license";
 export * from "./pk_storage_federation";
+export * from "./pk_storage_apikey_group";

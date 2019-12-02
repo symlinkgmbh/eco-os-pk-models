@@ -17,6 +17,8 @@
 
 
 
+import { IValidatorOption } from "./IValidatorOption";
+
 export interface IValidatorPattern {
   [key: string]: string | number | boolean | Date;
 }

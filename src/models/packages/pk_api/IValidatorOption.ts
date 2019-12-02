@@ -17,5 +17,14 @@
 
 
 
-export { ISignToken } from "./ISignToken";
-export { ICryptoWorker } from "./ICryptoWorker";
+import { IValidatorTypes } from "./IValidatorTypes";
+
+export interface IValidatorOption {
+  field: string;
+  minLength?: number;
+  maxLength?: number;
+  onlyNumber?: boolean;
+  onlyChars?: boolean;
+  typeCheck?: boolean;
+  targetType?: IValidatorTypes;
+}

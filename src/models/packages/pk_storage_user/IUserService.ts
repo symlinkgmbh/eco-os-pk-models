@@ -18,6 +18,7 @@
 
 
 import { MsUser } from "../../services";
+import { IApiKey } from "../../services/ms_user/IApiKey";
 
 export interface IUserService {
   createUser(user: MsUser.IUser): Promise<MsUser.IUser>;
@@ -32,7 +33,10 @@ export interface IUserService {
   searchUsers(query: string): Promise<Array<MsUser.IUser> | null>;
   getCountFromActivatedUsers(): Promise<number>;
   loadUserByApiKey(key: string): Promise<MsUser.IUser | null>;
-  addApiKeyToUser(id: string, key: string): Promise<MsUser.IUser | null>;
+  addApiKeyToUser(id: string, key: IApiKey): Promise<MsUser.IUser | null>;
   removeApiKeyFromUser(id: string, key: string): Promise<MsUser.IUser | null>;
   removeAllApiKeysFromUser(id: string): Promise<boolean>;
+  addAliasToUser(id: string, alias: string): Promise<MsUser.IUser | null>;
+  removeAliasFromUser(id: string, alias: string): Promise<MsUser.IUser | null>;
+  loadUserByAlias(alias: string): Promise<MsUser.IUser | null>;
 }

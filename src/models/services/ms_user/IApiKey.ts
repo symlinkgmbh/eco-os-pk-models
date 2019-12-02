@@ -17,5 +17,7 @@
 
 
 
-export { ISignToken } from "./ISignToken";
-export { ICryptoWorker } from "./ICryptoWorker";
+export interface IApiKey {
+  apikey: string;
+  expireDate?: Date;
+}

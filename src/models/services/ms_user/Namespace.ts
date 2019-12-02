@@ -31,3 +31,5 @@ export { IUpdateUserActiveState } from "./IUpdateUserActiveState";
 export { IDeleteAccountRequest } from "./IDeleteAccountRequest";
 export { IDeleteAccountResponse } from "./IDeleteAccountResponse";
 export { IUpdateAuthenticationKey } from "./IUpdateAuthenticationkey";
+export { IApiKey } from "./IApiKey";
+export { IApikeyGroup } from "./IApikeyGroup";

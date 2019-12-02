@@ -19,7 +19,12 @@
 
 import { ICustomRestError } from "./ICustomRestError";
 import { IValidatorPattern } from "./IValidationPattern";
+import { IValidatorOption } from "./IValidatorOption";
 
 export interface IValidator {
-  validate<T extends any>(target: T, pattern: IValidatorPattern): void | ICustomRestError;
+  validate<T extends any>(
+    target: T,
+    pattern: IValidatorPattern,
+    options?: Array<IValidatorOption>,
+  ): void | ICustomRestError;
 }
