@@ -48,4 +48,13 @@ export interface IEcoUserClient {
   // addAliasToUser(id: string, alias: string): Promise<AxiosResponse>;
   // removeAliasFromUser(id: string, alias: string): Promise<AxiosResponse>;
   // loadUserByAlias(alias: string): Promise<AxiosResponse>;
+  addKey(key: MsUser.IApikeyGroup): Promise<AxiosResponse>;
+  addMembers(id: string, members: Array<string>): Promise<AxiosResponse>;
+  addDomains(id: string, domains: Array<string>): Promise<AxiosResponse>;
+  getGroupById(id: string): Promise<AxiosResponse>;
+  getAllGroups(): Promise<AxiosResponse>;
+  loadGroupByApikey(key: string): Promise<AxiosResponse>;
+  deleteMember(id: string, member: string): Promise<AxiosResponse>;
+  deleteDomain(id: string, domain: string): Promise<AxiosResponse>;
+  deleteKey(id: string): Promise<AxiosResponse>;
 }

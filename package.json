@@ -1,6 +1,6 @@
 {
   "name": "@symlinkde/eco-os-pk-models",
-  "version": "0.0.231",
+  "version": "0.0.236",
   "description": "Package containing all share interfaces and models.",
   "types": "lib/index.d.ts",
   "main": "lib/index.js",

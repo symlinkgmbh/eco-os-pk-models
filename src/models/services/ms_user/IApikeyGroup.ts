@@ -18,7 +18,9 @@
 
 
 export interface IApikeyGroup {
+  owner: string;
   key: string;
+  accessPerHour?: number;
   members: Array<string>;
   domains: Array<string>;
   expireDate?: Date;

@@ -23,6 +23,9 @@ export interface IApikeyGroupService {
   addKey(key: MsUser.IApikeyGroup): Promise<MsUser.IApikeyGroup | null>;
   addMembers(id: string, members: Array<string>): Promise<MsUser.IApikeyGroup | null>;
   addDomains(id: string, domains: Array<string>): Promise<MsUser.IApikeyGroup | null>;
+  getGroupById(id: string): Promise<MsUser.IApikeyGroup | null>;
+  getAllGroups(): Promise<Array<MsUser.IApikeyGroup> | null>;
+  loadGroupByApikey(key: string): Promise<MsUser.IApikeyGroup | null>;
   deleteMember(id: string, member: string): Promise<MsUser.IApikeyGroup | null>;
   deleteDomain(id: string, domain: string): Promise<MsUser.IApikeyGroup | null>;
   deleteKey(id: string): Promise<boolean>;
