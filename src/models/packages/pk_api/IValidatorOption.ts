@@ -27,4 +27,5 @@ export interface IValidatorOption {
   onlyChars?: boolean;
   typeCheck?: boolean;
   targetType?: IValidatorTypes;
+  requireArray?: boolean;
 }
