@@ -1,5 +1,5 @@
 /**
- * Copyright 2018-2019 Symlink GmbH
+ * Copyright 2018-2020 Symlink GmbH
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@
 
 
 
+
 import { MsFederation, MsMail } from "../../services";
 import { AxiosResponse } from "axios";
 
@@ -29,4 +30,5 @@ export interface IFederationHooks {
     content: MsFederation.IFederationPostObject,
     config: MsMail.IMailFederationFailed,
   ): Promise<AxiosResponse>;
+  queueIncommingFederationContent(content: MsFederation.IFederationPostObject): Promise<AxiosResponse>;
 }
